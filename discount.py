@@ -10,3 +10,8 @@ class Discount:
             print(f"Áp dụng giảm giá 10% cho khách hàng thân thiết. Số tiền giảm: {discount_amount:.2f}")
         else:
             print("Khách hàng không đủ điều kiện để được giảm giá.")
+
+
+def calculate_discount(total_spent):
+    """Trả về tỷ lệ giảm giá theo tổng mức chi tiêu của khách hàng."""
+    return 0.10 if total_spent >= 50000000 else 0.0
